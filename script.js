@@ -5,14 +5,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const splatSound = document.getElementById('splatSound');
   const muteButton = document.getElementById('muteButton');
   const throwCounterDisplay = document.getElementById('throwCounter');
+  const options = document.getElementById('options');
+  const elements = document.querySelectorAll(
+    '.animate-up, .animate-left, .animate-right'
+  );
+
   let throwCounter = 0;
   let isMuted = false;
+
+  options.style.display = 'none';
 
   target.addEventListener('click', initiateThrow);
   target.addEventListener('touchend', initiateThrow);
   muteButton.addEventListener('click', toggleMute);
 
   function initiateThrow(e) {
+    options.style.display = 'flex';
     throwCounter++;
     throwCounterDisplay.textContent = throwCounter;
     // Calculate where the tomato should land
@@ -38,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       ],
       {
-        duration: 500, //throw speed
+        duration: 350, //throw speed
         easing: 'ease-out',
       }
     ).onfinish = () => {
@@ -63,4 +71,35 @@ document.addEventListener('DOMContentLoaded', function () {
     splatSound.muted = isMuted;
     muteButton.textContent = isMuted ? 'Unmute' : 'Mute';
   }
+
+  function show() {
+    isMuted = !isMuted;
+    splatSound.muted = isMuted;
+    muteButton.textContent = isMuted ? 'Unmute' : 'Mute';
+  }
+
+  const isInViewport = (el) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
+  const runAnimation = () => {
+    elements.forEach((el) => {
+      if (isInViewport(el)) {
+        el.classList.add('in-view');
+      }
+    });
+  };
+
+  // Run once on initial load
+  runAnimation();
+
+  // Add scroll event listener
+  window.addEventListener('scroll', runAnimation);
 });

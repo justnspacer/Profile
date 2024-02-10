@@ -14,42 +14,45 @@
     <h2 class="geologica-light">Full Stack Developer</h2>
   </div>
     <ul class="navigation">
-      <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </header>
   <main>
-<div class="main-img-container">
-  <img id="targetImage" src="./imgs/main-img-justin.jpg" alt="Justin Clark" class="profile-image">
-</div>
-<div class="options">
-  <button id="muteButton">Mute</button>
-  <div>Throws: <span id="throwCounter">0</span></div>
+<div id="targetImage"  class="main-img-container animate-up" alt="Justin Clark" class="profile-image">
+  <div class="headline">
+    <span class="geologica-bold">Tap image</span>
+    <h1 class="geologica-bold">Learning through resiliency</h1>
+  </div>
+  <div id="options">
+    <div><span id="throwCounter">0</span><span class="counterLabel geologica-bold">Tosses</span></div>
+    <button id="muteButton">Mute</button>
+  
+  </div>
 </div>
 <img id="tomato" src="./imgs/tomato.png" alt="Tomato" >
 <img id="splat" src="./imgs/tomato-splat.png" alt="Splat">
 <audio id="splatSound" src="./audio/090035_splatwav-91604.mp3"></audio>
-<section id="about" class="main-text">
-  <div id="professional-summary">
+<section class="main-text">
+  <div id="experience" class="animate-left">
     <h2>Professional Summary</h2>
-    <i class="fa-solid fa-hippo"></i>  
     <p>Dynamic and innovative Full Stack Web Developer with a comprehensive background in a diverse technology stack since late 2020. Proficient in a range of programming languages and tools including C#, ASP.NET, Azure DevOps, and Optimizely (Episerver). Skilled in both front-end and back-end development, I have a strong command over API development, Angular, SQL, MongoDB, Python, and emerging technologies. Passionate about integrating functional and aesthetic elements into web applications, I am adept in using design tools like Figma and Photoshop to translate ideas into user-friendly interfaces. I am a team player with excellent communication and problem-solving skills, and I am eager to contribute to the success of a dynamic, high-growth team.</p>
-  </div>
-  <div id="professional-vision">
-  <h2>Vision</h2>
+    <h2>Vision</h2>
   <p>As a driven Full Stack Web Developer, my goal is to continually evolve with the fast-paced tech industry, integrating innovative solutions to complex problems. I aim to leverage my diverse skill set and creativity to contribute to meaningful projects that push the boundaries of what's possible in web development and digital experiences.</p>
   </div>
+  <div id="about" class="animate-right">
+    <h2>Work History</h2>
+    <ol>
+    <li>Full Stack Developer</li>
+    </ol>
+    </div>
+    <div id="contact" class="animate-left">
+      <h2>Contact Information</h2>
+      </div>
 </section>
-<section id="experience">
-<ol>
-<li>Full Stack Developer</li>
-</ol>
-</section>
-<section id="contact">
-  <h2>contact info</h2>
-  </section>
   </main>
+  <script src="https://kit.fontawesome.com/f5f0f3ecb4.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
