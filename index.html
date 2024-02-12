@@ -1,58 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://kit.fontawesome.com/f5f0f3ecb4.js" crossorigin="anonymous"></script>
-  <title>Justin Clark's Profile</title>
-</head>
-<body>
-  <header>
-    <div class="profile-logo">
-    <h1 class="geologica-bold">Justin Clark</h1>
-    <h2 class="geologica-light">Full Stack Developer</h2>
-  </div>
-    <ul class="navigation">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-  <main>
-<div id="targetImage"  class="main-img-container animate-up" alt="Justin Clark" class="profile-image">
-  <div class="headline">
-    <span class="geologica-bold">Tap image</span>
-    <h1 class="geologica-bold">Learning through resiliency</h1>
-  </div>
-  <div id="options">
-    <div><span id="throwCounter">0</span><span class="counterLabel geologica-bold">Tosses</span></div>
-    <button id="muteButton">Mute</button>
-  
-  </div>
-</div>
-<img id="tomato" src="./imgs/tomato.png" alt="Tomato" >
-<img id="splat" src="./imgs/tomato-splat.png" alt="Splat">
-<audio id="splatSound" src="./audio/090035_splatwav-91604.mp3"></audio>
-<section class="main-text">
-  <div id="experience" class="animate-left">
-    <h2>Professional Summary</h2>
-    <p>Dynamic and innovative Full Stack Web Developer with a comprehensive background in a diverse technology stack since late 2020. Proficient in a range of programming languages and tools including C#, ASP.NET, Azure DevOps, and Optimizely (Episerver). Skilled in both front-end and back-end development, I have a strong command over API development, Angular, SQL, MongoDB, Python, and emerging technologies. Passionate about integrating functional and aesthetic elements into web applications, I am adept in using design tools like Figma and Photoshop to translate ideas into user-friendly interfaces. I am a team player with excellent communication and problem-solving skills, and I am eager to contribute to the success of a dynamic, high-growth team.</p>
-    <h2>Vision</h2>
-  <p>As a driven Full Stack Web Developer, my goal is to continually evolve with the fast-paced tech industry, integrating innovative solutions to complex problems. I aim to leverage my diverse skill set and creativity to contribute to meaningful projects that push the boundaries of what's possible in web development and digital experiences.</p>
-  </div>
-  <div id="about" class="animate-right">
-    <h2>Work History</h2>
-    <ol>
-    <li>Full Stack Developer</li>
-    </ol>
-    </div>
-    <div id="contact" class="animate-left">
-      <h2>Contact Information</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/f5f0f3ecb4.js" crossorigin="anonymous"></script>
+    <title>Justin Clark's Profile</title>
+  </head>
+  <body>
+    <header>
+      <div class="profile-logo">
+        <h1 class="geologica-bold">Justin Clark</h1>
+        <h2 class="geologica-light">Full Stack Developer</h2>
       </div>
-</section>
-  </main>
-  <script src="https://kit.fontawesome.com/f5f0f3ecb4.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./script.js"></script>
-</body>
+      <ul class="navigation">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div id="targetImage" class="main-img-container" alt="Justin Clark" class="profile-image">
+        <div class="headline">
+          <span class="geologica-bold">Tap image</span>
+          <h1 class="geologica-bold">Learning through resiliency</h1>
+        </div>
+        <div id="options">
+          <div>
+            <span id="throwCounter">0</span><span class="counterLabel geologica-bold">Tosses</span>
+          </div>
+          <button id="muteButton">Mute</button>
+        </div>
+      </div>
+      <img id="tomato" src="./imgs/tomato.png" alt="Tomato" />
+      <img id="splat" src="./imgs/tomato-splat.png" alt="Splat" />
+      <audio id="splatSound" src="./audio/090035_splatwav-91604.mp3"></audio>
+      <section class="main-text">
+        <div id="summary" class="">
+          <div class="flex-container">
+            <div class="image-container">
+              <img src="./imgs/linkedin-pic.jpg" alt="" />
+            </div>
+            <div class="text-content">
+              <h2>Professional Summary</h2>
+              <p>
+                I am a full stack web developer who has been coding since 2017. I am proficient in a
+                range of programming languages and tools including C#, ASP.NET, Azure DevOps, and
+                Optimizely (Episerver). Skilled in both front-end and back-end development, I have a
+                strong command over API development, Angular, React, SQL, MongoDB, Python, and
+                getting faimlar with Artifical Intelligence. Passionate about integrating functional
+                and aesthetic elements into web applications, I am adept in using design tools like
+                Figma and Photoshop to translate ideas into user-friendly interfaces. I am a team
+                player with excellent communication and problem-solving skills, and I am eager to
+                contribute to the success of a dynamic, high-growth team.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-container">
+            <div class="text-content">
+              <h2>Vision</h2>
+              <p>
+                As a driven Full Stack Web Developer, my goal is to continually evolve with the
+                fast-paced tech industry, integrating innovative solutions to complex problems. I
+                aim to leverage my diverse skill set and creativity to contribute to meaningful
+                projects that push the boundaries of what's possible in web development and digital
+                experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="experience" class="">
+          <div class="flex-container">
+            <div class="text-content">
+              <h2>Expereince</h2>
+              <i class="fa-solid fa-user"></i>
+              <div class="item">
+                <div class="date">2020 - Present</div>
+                <div class="name">American Academy of Orthopaedic Surgeons</div>
+                <div class="title">Full Stack Developer</div>
+                <ul class="details">
+                  <li>
+                    Redesigned annual meeting pages with a design that is able to be updated and
+                    given new feels each year
+                  </li>
+                  <li>
+                    Assisted with migrating the association management system (ams) from Personify
+                    to Protech
+                  </li>
+                  <li>Develop new apis for functionality for a variety of applications</li>
+                  <li>
+                    Maintenance and support for a Optimizely (EpiServer) based website with a
+                    backend of ASP.NET and C#
+                  </li>
+                  <li>
+                    Implemented Google Analytics and Ecommerce tracking for online store purchases
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <div class="date">2014 - 2020</div>
+                <div class="name">American Academy of Orthopaedic Surgeons</div>
+                <div class="title">Meeting Coordinator</div>
+                <ul class="details">
+                  <li>
+                    Created and maintained forms for meeting requests and attendee information for
+                    various meetings/events, coordinated logistics of 200+ meetings/events annually
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <div class="date">2017-2018</div>
+                <div class="name">Coding Dojo Bootcamp</div>
+                <ul class="details">
+                  <li>
+                    Completed 20-week online full stack development program with over 1000+ hours of
+                    hands-on coding experience in HTML, CSS, JavaScript, APIs, Python and MEAN
+                  </li>
+                </ul>
+              </div>
+              <div class="item">
+                <div class="date">2007 - 2011</div>
+                <div class="name">University of Iowa</div>
+                <ul class="details">
+                  <li>Bachelor of Arts, Health Science</li>
+                  <li>Minor in Human Relations</li>
+                  <li>Certificate in Entrepreneurship</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="">
+          <div class="flex-container">
+            <div class="text-content">
+              <h2>Contact</h2>
+              <ul>
+                <li><a href="mailto:justnclrk@gmail.com">Email</a></li>
+                <li><a href="https://github.com/justnclrk">My first Github</a></li>
+                <li><a href="https://github.com/justnspacer">Current Github</a></li>
+                <li><a href="https://www.instagram.com/_justnspace">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>

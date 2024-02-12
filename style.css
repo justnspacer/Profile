@@ -84,7 +84,6 @@ header {
   
     a:hover {
       background: linear-gradient(to right, rgba(100, 143, 255), rgba(106, 230, 197));
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -131,11 +130,6 @@ header {
   width: 100%;
   margin: 0 auto;
   display: block;  
-}
-
-
-.main-text {
-  padding: 10px;
 }
 
 i {
@@ -217,28 +211,27 @@ i {
 
 .main-text {
   width: 100%;
+  padding: 20px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-
-  h2 {
-    margin-top: 20px;
+  
+  h2{
+    padding-top: 20px;
   }
 
   p{
     line-height: 1.5;
   }
 
-  div {
+  /* div {
     width: 50%;
-    padding: 40px 20px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
-  .main-text div {
+  /* .main-text div {
     width: 100%;
-  }
+  } */
 }
 
 
@@ -296,4 +289,74 @@ i {
 .in-view {
   opacity: 1;
   transform: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0px 20px; 
+}
+
+.text-content {
+  flex: 1;
+  padding-left: 20px; 
+}
+
+.image-container {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .text-content, .image-container {
+    max-width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+ul.details {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.item {
+  padding: 20px 0;
+
+    .name {
+      font-family: "Geologica", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+    }
+
+    .date {
+      font-style: italic;
+      margin-top: 10px;
+    }
 }
