@@ -66,16 +66,22 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 
-  function toggleMute() {
+  function toggleMute(e) {
     isMuted = !isMuted;
     splatSound.muted = isMuted;
-    muteButton.textContent = isMuted ? 'Unmute' : 'Mute';
-  }
+    const icon = muteButton.querySelector('i');
+    muteButton.stopPr
+    e.stopPropagation();
 
-  function show() {
-    isMuted = !isMuted;
-    splatSound.muted = isMuted;
-    muteButton.textContent = isMuted ? 'Unmute' : 'Mute';
+    if (isMuted) {
+      icon.classList.remove('fa-volume-high');
+      icon.classList.add('fa-volume-xmark');
+      muteButton.prepend(icon);
+    } else {
+      icon.classList.remove('fa-volume-xmark');
+      icon.classList.add('fa-volume-high');
+      muteButton.prepend(icon);
+    }  
   }
 
   const isInViewport = (el) => {
