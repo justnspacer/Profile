@@ -45,6 +45,11 @@ header {
     height: fit-content;
     font-family: var(--font-family);
 
+    a:visited, a:link {
+      color: var(--black-color);
+      text-decoration: none;
+    }
+
     h1 {
       font-weight: var(--font-weight-900);      
     }
@@ -199,12 +204,13 @@ i {
 
 .main-text {
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   
   h2{
     padding-top: 20px;
+    text-decoration: underline;
   }
 
   p{
