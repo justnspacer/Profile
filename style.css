@@ -98,7 +98,6 @@ header {
     width: fit-content;
     margin: 10px;
     font-weight: var(--font-weight-900);
-    white-space: nowrap;
   }
 
   span {
@@ -229,6 +228,8 @@ i {
 
   header .navigation {
     align-items: end;
+    flex-direction: column;
+    gap: 10px;
 
     li {
       font-size: 0.8rem;
