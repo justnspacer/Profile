@@ -181,26 +181,12 @@ i {
       transform: scale(1.1);
     }
   }
-
-  #throwCounter {
-    font-weight: var(--font-weight-900);
-    font-size: var(--font-size-2);
-    color: var(--white-color);
-  }
-
-  .counterLabel {
-    background: var(--white-color);
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-900);
-    text-transform: capitalize;
-  }
 }
 
 @keyframes throwAnimation {
   0% { transform: translate(0, 0) scale(1); opacity: 1; }
   100% { transform: translate(0, -300px) scale(0.5); opacity: 0; }
 }
-
 
 .main-text {
   width: 100%;

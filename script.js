@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     '.animate-up, .animate-left, .animate-right'
   );
 
-  let throwCounter = 0;
   let isMuted = false;
 
   options.style.display = 'none';
@@ -21,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initiateThrow(e) {
     options.style.display = 'flex';
-    throwCounter++;
-    throwCounterDisplay.textContent = throwCounter;
+
     // Calculate where the tomato should land
     const endX = e.clientX;
     const endY = e.clientY;
